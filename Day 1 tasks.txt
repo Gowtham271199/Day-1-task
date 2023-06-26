@@ -1,0 +1,29 @@
+1.) Write a blog on Difference between HTTP1.1 vs HTTP2
+ 
+Answer : 
+	HTTP/1.1 and HTTP/2 are two versions of the Hypertext Transfer Protocol (HTTP), which is the underlying protocol used for communication on the World Wide Web. While both versions serve the same purpose of facilitating communication between clients and servers, they differ in terms of performance, features, and the way data is transmitted
+.
+Multiplexing: 
+ 	HTTP/1.1 uses a request/response model, where a single request is sent to the server, and the server responds with the corresponding data. With HTTP/2, multiplexing is introduced, allowing multiple requests and responses to be sent and received concurrently over a single TCP connection. This reduces latency and improves performance by eliminating the need for multiple connections.
+
+Binary Protocol: 
+	HTTP/1.1 uses plain text for communication, which can be verbose and inefficient. HTTP/2, on the other hand, employs a binary protocol, where data is serialized and transmitted in a compact binary format. This binary format is more efficient to parse and reduces the amount of data transferred, leading to improved performance.
+
+Header Compression:
+	 In HTTP/1.1, headers are sent with each request and response, which can be redundant and add overhead. HTTP/2 introduces header compression using the HPACK algorithm, which significantly reduces the size of headers, conserving bandwidth and improving performance.
+
+Server Push:
+ HTTP/2 supports server push, which allows the server to proactively send additional resources to the client before they are explicitly requested. This feature eliminates the need for the client to send multiple requests for related resources, reducing latency and improving page load times.
+
+Prioritization:
+	 HTTP/2 enables stream prioritization, where the client can assign weights and dependencies to different requests. This feature allows the client to prioritize critical resources and ensure they are delivered first, leading to better performance and user experience.
+
+Backward Compatibility:
+	 HTTP/2 is designed to be fully backward compatible with HTTP/1.1. If a client or server doesn't support HTTP/2, the communication falls back to HTTP/1.1. This ensures that websites and applications can adopt HTTP/2 gradually without requiring immediate infrastructure changes.
+
+2.)Write a blog about objects and its internal representation in Javascript:
+Answer :
+
+	Objects are important data types in javascript. Objects are different than primitive datatypes (i.e. number, string, boolean, etc.). Primitive data types contain one value but Objects can hold many values in form of Key: value pair. These keys can be variables or functions and are called properties and methods, respectively, in the context of an object.
+
+Every object has some property associated with some value. These values can be accessed using these properties associated with them.
