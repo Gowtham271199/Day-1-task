@@ -1,0 +1,32 @@
+1. ) Difference between document and window object
+
+
+In JavaScript, both the document and window objects are important components of the browser environment and provide access to various properties and methods. Although they are closely related, there are some key differences between them:
+
+Document Object (document):
+	 The document object represents the HTML document currently loaded in the browser window. It provides access to the structure and content of the web page and allows manipulation of its elements. Some important features of the document object include:
+
+DOM Manipulation: 
+	The document object provides methods and properties to interact with the Document Object Model (DOM). It allows you to access and modify elements, create new elements, attach event handlers, change styles, and perform other operations on the web page.
+
+Access to HTML Elements: 
+	The document object provides methods like getElementById, querySelector, and getElementsByTagName to retrieve HTML elements from the page based on their IDs, selectors, or tag names.
+
+Document Information:
+	 The document object allows you to access information about the document, such as its URL (document.URL), title (document.title), domain (document.domain), and more.
+
+Window Object (window):
+	 The window object represents the browser window or tab that contains the current web page. It acts as the global object in the browser environment and provides access to various features and functionality related to the window or tab. Some key aspects of the window object include:
+
+Global Scope: 
+	Variables and functions defined in the global scope are attached to the window object. For example, if you define a global variable x, it becomes accessible as window.x.
+
+Window Methods and Properties:
+	 The window object provides a wide range of methods and properties that allow interaction with the browser window. These include methods like alert, confirm, and setTimeout, as well as properties like location, navigator, and localStorage.
+
+Document Object:
+	 The window object also serves as a container for the document object. You can access the document object as window.document. This allows you to use methods and properties provided by the document object through the window object, such as window.document.getElementById or simply window.document.getElementById.
+
+Window Dimensions and Navigation: 
+	The window object provides properties like innerWidth, innerHeight, scrollX, scrollY, and methods like open, close, and navigate that control the dimensions of the window, scrolling behavior, and navigation between pages.
+
